@@ -1,0 +1,15 @@
+# Versions printed by the original notebook installation log.
+# Not a complete environment lock; new installation was not tested.
+# Original notebook kernel: Python 3.11.18.
+torch==2.15.0
+monai==1.6.1
+nibabel==5.4.2
+numpy==2.4.6
+pandas==3.1.1
+scipy==1.17.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+tqdm==4.70.1
+huggingface_hub==2.4.0
+safetensors==0.8.0
+einops==0.8.2

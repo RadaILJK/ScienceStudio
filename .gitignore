@@ -1,0 +1,42 @@
+# Local MRI data and metadata
+/data/
+*.nii
+*.nii.gz
+
+# Model weights and cached features
+/weights/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.npz
+
+# Working outputs of new runs; keep results/metrics.json and original notebook
+/results/runs/
+
+# Python temporary files and local environments
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.pytest_cache/
+
+# LaTeX build intermediates; PDF files remain tracked
+*.aux
+*.bcf
+*.bbl
+*.blg
+*.log
+*.run.xml
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Operating system temporary files
+.DS_Store
+Thumbs.db

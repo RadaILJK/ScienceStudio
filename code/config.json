@@ -1,0 +1,70 @@
+{
+  "seed": 42,
+  "dataset": {
+    "id": "ds006395",
+    "url": "https://openneuro.org/datasets/ds006395",
+    "reference_version": "1.0.8",
+    "original_snapshot_verified": false
+  },
+  "data": {
+    "data_dir": "data",
+    "participants_candidates": [
+      "participants.tsv",
+      "data/participants.tsv"
+    ],
+    "expected_counts": {
+      "HC": 37,
+      "ULD": 29
+    }
+  },
+  "model": {
+    "repo_id": "eugenehp/brainiac",
+    "filename": "backbone.safetensors",
+    "revision": null,
+    "checkpoint_path": null,
+    "device": "cpu",
+    "architecture": {
+      "in_channels": 1,
+      "img_size": [
+        96,
+        96,
+        96
+      ],
+      "patch_size": [
+        16,
+        16,
+        16
+      ],
+      "hidden_size": 768,
+      "mlp_dim": 3072,
+      "num_layers": 12,
+      "num_heads": 12,
+      "spatial_dims": 3,
+      "classification": false,
+      "save_attn": true
+    }
+  },
+  "cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "classifier": {
+    "C": 0.1,
+    "max_iter": 3000,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "threshold": 0.5,
+  "preprocessing": {
+    "orientation": "RAS",
+    "spatial_size": [
+      96,
+      96,
+      96
+    ],
+    "resize_mode": "trilinear",
+    "nonzero": true,
+    "channel_wise": true
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "original_notebook_saved_output",
+  "source_cell_index_zero_based": 27,
+  "metrics_rounded_to_decimals": 3,
+  "accuracy": 0.576,
+  "balanced_accuracy": 0.562,
+  "roc_auc": 0.569,
+  "n_HC": 37,
+  "n_ULD": 29,
+  "n_subjects": 66,
+  "feature_dimension": 768,
+  "confusion_matrix": [
+    [
+      25,
+      12
+    ],
+    [
+      16,
+      13
+    ]
+  ],
+  "class_order": [
+    "HC",
+    "ULD"
+  ],
+  "aggregation": "pooled out-of-fold predictions",
+  "historical_oof_predictions_available": false,
+  "historical_curve_png_available": true,
+  "historical_full_runtime_seconds": null,
+  "historical_feature_extraction_seconds_approx": 839,
+  "historical_training_loss": null,
+  "experiment": {
+    "dataset": "OpenNeuro ds006395",
+    "task": "ULD vs HC",
+    "encoder": "BrainIAC frozen",
+    "embedding_dim": 768,
+    "classifier": "LogisticRegression",
+    "C": 0.1,
+    "class_weight": "balanced",
+    "max_iter": 3000,
+    "validation": {
+      "type": "StratifiedKFold",
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "aggregation_of_reported_auc": "pooled_out_of_fold_predictions_confirmed_in_original_notebook",
+    "scaler_validation": "StandardScaler is inside the per-fold sklearn Pipeline",
+    "readout": "first patch token: output[:, 0, :]; not CLS"
+  },
+  "notes": "Historical notebook output, not a new MRI experiment. Metrics rounded to 3 decimals."
+}
